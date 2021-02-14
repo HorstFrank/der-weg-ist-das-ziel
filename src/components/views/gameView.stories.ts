@@ -5,6 +5,8 @@ import { getWpLinks } from "./../utils/api";
 import { getRandomWpPage } from "./../utils/api";
 import logoLeft from "../../assets/images/logo_l.png";
 import logoRight from "../../assets/images/logo_r.png";
+import trenner from "../../assets/images/trenner.png";
+import abschluss from "../../assets/images/abschluss.png";
 
 export default {
   title: "Components/gameView",
@@ -87,6 +89,15 @@ export const gameViewXX = (args, { loaded: { linklist } }) => {
   return createElement("main", {
     childs: [
       createElement("div", {
+        className: "steps-left-container",
+        childs: [
+          createElement("img", {
+            className: "abschluss",
+            src: abschluss,
+          }),
+        ],
+      }),
+      createElement("div", {
         className: "logo-cont",
         childs: [
           createElement("img", {
@@ -126,6 +137,7 @@ export const gameViewXX = (args, { loaded: { linklist } }) => {
           }),
         ],
       }),
+
       createElement("div", {
         className: "link-headline",
         innerText: "Die Seite enthält folgende Verlinkungen:",
@@ -134,6 +146,15 @@ export const gameViewXX = (args, { loaded: { linklist } }) => {
         className: "link-container",
         id: "link-container",
         childs: [...createLinkListfromArray(linklist.links)],
+      }),
+      createElement("div", {
+        className: "steps-left-container",
+        childs: [
+          createElement("img", {
+            className: "abschluss",
+            src: abschluss,
+          }),
+        ],
       }),
     ],
   });
