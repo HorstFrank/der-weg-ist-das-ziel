@@ -1,0 +1,81 @@
+.logo-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 40px;
+}
+
+.logo-left {
+  width: 80px;
+}
+
+.logo-right {
+  width: 60px;
+}
+
+.logo-headline {
+  font-family: "swallow";
+  font-size: 80px;
+  align-self: center;
+  color: rgb(39, 52, 109);
+  word-spacing: -5px;
+}
+
+.you-are-here-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.you-are-here-container__label {
+  font-family: "ubuntu";
+  font-size: 10px;
+  color: gray;
+}
+
+.you-are-here-container__wikisite {
+  font-family: "ubuntu";
+  font-size: 25px;
+  color: black;
+}
+
+.steps-left-container {
+  font-family: "ubuntu";
+  font-size: 10px;
+  color: gray;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.steps-left-container__number {
+  color: darkslategrey;
+  font-weight: bold;
+  font-size: 15px;
+}
+.link-headline {
+  font-family: "ubuntu";
+  font-size: 10px;
+  color: gray;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.innerlinks {
+  border-radius: 30px;
+  font-family: "ubuntu";
+  border: darkslategrey 1px solid;
+  color: darkslategrey;
+  background-color: white;
+  font-size: 13px;
+  font-weight: 100;
+  margin: 0px 3px 3px 3px;
+}
+.innerlinks:hover {
+  color: rgb(214, 4, 4);
+}
+.gewonnen {
+  font-family: "ubuntu";
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+}

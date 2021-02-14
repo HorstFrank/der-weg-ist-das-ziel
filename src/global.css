@@ -1,4 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@font-face {
+  font-family: "ubuntu";
+  src: url("assets/fonts/ubuntu/Ubuntu-C.ttf") format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "ubuntu";
+  src: url("assets/fonts/ubuntu/Ubuntu-R.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url("assets/fonts/ubuntu/Ubuntu-B.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "swallow";
+  src: url("assets/fonts/swallow_falls_lite/Swallow Falls Lite.ttf")
+    format("truetype");
+}
 
 *,
 *::after,
@@ -7,19 +27,19 @@
 }
 
 html {
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
-  margin: 0;
+  /* font-family: "Quicksand", sans-serif;
+  margin: 0; */
 }
 
-input,
+/* input,
 button,
 select,
 optgroup,
 textarea {
   margin: 0;
   font-family: "Quicksand", sans-serif;
-}
+} */
