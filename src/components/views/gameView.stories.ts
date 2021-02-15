@@ -74,47 +74,63 @@ const createLinkButton = (title) => {
   });
 };
 
-const clearLinkContainer = () => {
-  document.getElementsByClassName("link-container")[0].innerText = "";
-};
+// const clearLinkContainer = () => {
+//   document.getElementsByClassName("link-container")[0].innerText = "";
+// };
 
-async function getRandomPageName() {
-  const x = await getRandomWpPage();
-  console.log(x);
-}
+// async function getRandomPageName() {
+//   const x = await getRandomWpPage();
+//   console.log(x);
+// }
+
+const headerHtml = createElement("div", {
+  className: "logo-cont",
+  childs: [
+    createElement("img", {
+      className: "logo-left",
+      src: logoLeft,
+    }),
+    //   dog,
+    createElement("span", {
+      className: "logo-headline",
+      innerText: "Der Weg ist das Ziel",
+    }),
+    createElement("img", {
+      className: "logo-right",
+      src: logoRight,
+    }),
+  ],
+});
+
+// const dividerLine = createElement("div", {
+//   className: "trenner container-center",
+//   childs: [
+//     createElement("img", {
+//       className: "abschluss",
+//       src: abschluss,
+//     //   src: "../../assets/images/abschluss.png",
+//     }),
+//   ],
+// });
+
+const createDividerLine = () =>
+  createElement("div", {
+    className: "trenner container-center",
+    childs: [
+      createElement("img", {
+        className: "abschluss",
+        src: abschluss,
+      }),
+    ],
+  });
 
 export const gameViewXX = (args, { loaded: { linklist } }) => {
   youAreHereDiv.innerText = linklist.title;
 
-  return createElement("main", {
+  return createElement("div", {
     childs: [
-      createElement("div", {
-        className: "steps-left-container",
-        childs: [
-          createElement("img", {
-            className: "abschluss",
-            src: abschluss,
-          }),
-        ],
-      }),
-      createElement("div", {
-        className: "logo-cont",
-        childs: [
-          createElement("img", {
-            className: "logo-left",
-            src: logoLeft,
-          }),
-          //   dog,
-          createElement("span", {
-            className: "logo-headline",
-            innerText: "Der Weg ist das Ziel",
-          }),
-          createElement("img", {
-            className: "logo-right",
-            src: logoRight,
-          }),
-        ],
-      }),
+      createDividerLine(),
+      headerHtml,
       createElement("div", {
         className: "you-are-here-container",
         childs: [
@@ -147,15 +163,7 @@ export const gameViewXX = (args, { loaded: { linklist } }) => {
         id: "link-container",
         childs: [...createLinkListfromArray(linklist.links)],
       }),
-      createElement("div", {
-        className: "steps-left-container",
-        childs: [
-          createElement("img", {
-            className: "abschluss",
-            src: abschluss,
-          }),
-        ],
-      }),
+      createDividerLine(),
     ],
   });
 };
