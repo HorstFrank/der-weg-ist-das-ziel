@@ -108,7 +108,6 @@ const headerHtml = createElement("div", {
 //     createElement("img", {
 //       className: "abschluss",
 //       src: abschluss,
-//     //   src: "../../assets/images/abschluss.png",
 //     }),
 //   ],
 // });
